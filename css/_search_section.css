@@ -1,0 +1,110 @@
+.top-title {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.search-form {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.form-control {
+    height: 50px;
+    display: flex;
+}
+
+.form-label {
+    /* font-size: 10px; */
+    display: block;
+    padding-bottom: 14px;
+}
+
+.form-control>i.fas {
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--gray);
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.form-control>i.fas::before {
+    padding: 0px 15px;
+    margin-left: 5px;
+    box-sizing: content-box;
+
+}
+
+.form-control .search-input {
+    height: 100%;
+    border-top: 1px var(--gray) solid;
+    border-bottom: 1px var(--gray) solid;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding-left: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control .btn-search-submit {
+    height: 100%;
+    background-color: var(--blue);
+    color: var(--gray);
+    padding-bottom: 2px;
+    border: none;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.form-control .btn-search-submit::before {
+    content: 'Rechercher';
+    padding: 0 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-title {
+        font-size: 23px;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-control {
+        height: 45px;
+    }
+
+    .form-control .btn-search-submit {
+        display: inline-block;
+        border-radius: 35%;
+        margin-left: -40px;
+    }
+
+    .form-control .btn-search-submit::before {
+        font-family: "font awesome 5 free" !important;
+        font-size: 18px;
+        display: inline-block;
+        content: '\f002';
+    }
+}
+
+@media only screen and (max-width: 411px) {
+
+    .search-form {
+        justify-content: center;
+    }
+
+    .form-label {
+        padding-bottom: 20px;
+    }
+}

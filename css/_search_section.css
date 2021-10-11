@@ -1,5 +1,5 @@
 .top-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -65,16 +65,11 @@
     cursor: pointer;
 }
 
-.form-control .btn-search-submit::before {
-    content: 'Rechercher';
+.form-control .btn-search-submit{
     padding: 0 14px;
 }
 
 @media only screen and (max-width: 768px) {
-    .top-title {
-        font-size: 23px;
-    }
-
     .search-form {
         display: flex;
         align-items: center;
@@ -85,16 +80,19 @@
     }
 
     .form-control .btn-search-submit {
-        display: inline-block;
         border-radius: 35%;
         margin-left: -40px;
+        text-indent: -9999px;
+        line-height: 0; 
     }
 
-    .form-control .btn-search-submit::before {
+    .form-control .btn-search-submit::after {
         font-family: "font awesome 5 free" !important;
         font-size: 18px;
-        display: inline-block;
         content: '\f002';
+        text-indent: 0;
+        display: block;
+        line-height: initial;
     }
 }
 

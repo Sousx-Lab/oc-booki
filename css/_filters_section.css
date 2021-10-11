@@ -1,13 +1,14 @@
-.filters{
+.filters {
     display: flex;
     flex-wrap: wrap;
-    align-items:baseline;
+    align-items: baseline;
 }
-.filters ul{
+
+.filters ul {
     padding-bottom: 20px;
 }
 
-.filters .filters-list{
+.filters .filters-list {
     font-size: 15px;
     font-weight: 800;
     display: inline-block;
@@ -18,25 +19,27 @@
     border-left: none;
     box-sizing: border-box;
     border-radius: 50px;
-    background:linear-gradient(to right, #ffff 50%, var(--blue) 50%);
+    background: linear-gradient(to right, #ffff 50%, var(--blue) 50%);
     transition: background-position 0.3s;
     box-shadow: 0 0 0px transparent;
     background-size: 203% 100%;
 }
-.filters-list:hover{
+
+.filters-list:hover {
     background-position: 98% 0%;
-    color:#ffff;
+    color: #ffff;
     border-color: transparent;
 }
 
-#filter-label{
+#filter-label {
     font-size: 16px;
     font-weight: 800;
     margin-bottom: 15px;
     padding-right: 30px;
 }
 
-.filters-list>a, a:visited{
+.filters-list>a,
+a:visited {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
@@ -44,12 +47,12 @@
     padding: 15px 12px 15px 0;
 }
 
-.filters-list>a>i.fas{
+.filters-list>a>i.fas {
     color: var(--blue);
     margin-right: 12px;
 }
 
-.filters-list i.fas::before{
+.filters-list i.fas::before {
     display: inline-block;
     border-radius: 100%;
     background-color: var(--light-blue);
@@ -59,11 +62,8 @@
     margin-bottom: -2px;
     margin-left: -3px;
 }
-.search-hit{
-    margin-bottom: 40px;
-}
 
-.search-hit>i::before{
+.search-hit>i::before {
     margin-right: 12px;
     font-size: 12px;
     padding: 4px 9px;
@@ -72,11 +72,14 @@
     border-radius: 50%;
     border: 1px solid var(--dark-gray);
 }
+
 @media only screen and (max-width: 768px) {
-        .filters .filters-list{
-            margin: 0 10px 10px 0;
-        }
-        .filters-list>a, a:visited{
-            font-size: 15px;
-        }
+    .filters .filters-list {
+        margin: 0 10px 10px 0;
+    }
+
+    .filters-list>a,
+    a:visited {
+        font-size: 15px;
+    }
 }

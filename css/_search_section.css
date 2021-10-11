@@ -9,12 +9,11 @@
 }
 
 .form-control {
-    height: 50px;
     display: flex;
+    height: 50px;
 }
 
 .form-label {
-    /* font-size: 10px; */
     display: block;
     padding-bottom: 14px;
 }
@@ -71,17 +70,17 @@
 
 @media only screen and (max-width: 768px) {
     .search-form {
-        display: flex;
-        align-items: center;
+        width: 100%;
     }
 
     .form-control {
         height: 45px;
+        justify-content: space-around;
     }
 
     .form-control .btn-search-submit {
         border-radius: 35%;
-        margin-left: -40px;
+        margin-left: -6px;
         text-indent: -9999px;
         line-height: 0; 
     }
@@ -97,12 +96,14 @@
 }
 
 @media only screen and (max-width: 411px) {
-
-    .search-form {
-        justify-content: center;
-    }
-
     .form-label {
-        padding-bottom: 20px;
+        padding-bottom: 35px;
     }
+}
+
+@media only screen and (max-width: 321px){
+    .form-control .btn-search-submit {
+        margin-left: -50px;
+    }
+    
 }

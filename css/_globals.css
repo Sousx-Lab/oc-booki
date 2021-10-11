@@ -30,6 +30,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+ul , li{
+    list-style: none;
+}
+
 .top-title {
     font-size: 20px;
     font-weight: 800;

@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    background-color: var(--gray);
+    justify-content: flex-start;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer .footer-nav{
+    padding: 0 40px;
+    margin: 50px auto 50px 0;
+    line-height: 25px;
+}
+.footer .footer-nav h4{
+    padding-bottom: 8px;
+    font-weight: 800;
+    font-size: 15px;
+}
+.footer-nav .footer-nav-items a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .footer .footer-nav{
+        padding: 0 30px;
+        margin: 12px auto 12px 0;
+    }
+}

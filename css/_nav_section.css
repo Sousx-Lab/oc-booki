@@ -18,9 +18,7 @@
     display: flex;
     
 }
-.nav-list{
-    list-style: none;
-}
+
 .nav-list a{
     padding: 50px  20px;
     display: inline-block;

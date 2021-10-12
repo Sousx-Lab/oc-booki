@@ -1,5 +1,5 @@
 .top-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
 }
 
@@ -64,7 +64,7 @@
     cursor: pointer;
 }
 
-.form-control .btn-search-submit{
+.form-control .btn-search-submit {
     padding: 0 14px;
 }
 
@@ -75,14 +75,13 @@
 
     .form-control {
         height: 45px;
-        justify-content: space-around;
     }
 
     .form-control .btn-search-submit {
         border-radius: 35%;
         margin-left: -6px;
         text-indent: -9999px;
-        line-height: 0; 
+        line-height: 0;
     }
 
     .form-control .btn-search-submit::after {
@@ -99,11 +98,19 @@
     .form-label {
         padding-bottom: 35px;
     }
+
+    .form-control {
+        justify-content: space-around;
+    }
+
+    .form-control .btn-search-submit {
+        margin-left: -30px;
+    }
 }
 
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 321px) {
     .form-control .btn-search-submit {
         margin-left: -50px;
     }
-    
+
 }

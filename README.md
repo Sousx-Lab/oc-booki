@@ -1,4 +1,4 @@
 ## OC/P2 Booki 
 ### Preview
 
-[Github Pages Booki P2](https://sousx-lab.github.io/oc-booki/)
+[Github Weather Forecast](https://sousx-lab.github.io/weather-forcast/)
